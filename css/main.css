@@ -87,6 +87,181 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+/* Base styles */
+::before, ::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.content-wrapper {
+  width: 85%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/************************** Base Header - Footer styles ******************/
+
+header,
+footer {
+display: flex;
+justify-content: center;
+align-items: center;
+flex-flow: row wrap;
+}
+
+/* Header styles */
+
+header {
+}
+
+header .content-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+img {
+  max-width: 100%;
+}
+
+.header-divider {}
+
+header nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+.nav-list {
+  display: flex;
+  justify-content: space-around;
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.nav-item {
+text-decoration: none;
+margin: 0 2em;
+text-transform: uppercase;
+}
+
+/* Footer styles */
+
+footer .content-wrapper {
+
+}
+
+.footer-content {
+
+}
+
+.contact,
+.social {
+text-align: center;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center; /*space-around=soluton*/
+    align-items: center;
+  }
+
+.social p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*************************** Mobile styles - Homepage *********************/
+/* Hero section */
+.hero-area {
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+}
+
+/* Aside section */
+aside {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+.form-description {}
+
+.form {}
+
+/* Features section */
+.features {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* includes flex-flow: row wrap in solution */
+}
+
+.features-items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  text-align: center;
+}
+
+.fontawesome-icon {}
+
+.features-items-description {}
+
+/* Reviews section */
+.reviews {
+  display: flex;
+  justify-content: center;
+  align-items: center; /*missing in solution*/
+  flex-flow: row wrap;
+}
+
+.company-review {}
+
+.company-content {}
+
+/*************************** Mobile styles - About page *********************/
+
+.mission {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+.contact-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* includes flex-flow: row wrap in solution */
+}
+
+/*************************** Mobile styles - FAQ page *********************/
+
+.faq {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+.faq .content-wrapper {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
@@ -260,4 +435,3 @@ textarea {
     page-break-after: avoid;
   }
 }
-

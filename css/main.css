@@ -1,16 +1,13 @@
 /*! HTML5 Boilerplate v8.0.0 | MIT License | https://html5boilerplate.com/ */
-
 /* main.css 2.1.0 | MIT License | https://github.com/h5bp/main.css#readme */
 /*
  * What follows is the result of much research on cross-browser styling.
  * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
  * Kroc Camen, and the H5BP dev community and team.
  */
-
 /* ==========================================================================
    Base styles: opinionated defaults
    ========================================================================== */
-
 html {
   color: #222;
   font-size: 1em;
@@ -26,7 +23,6 @@ html {
  *
  * Customize the background color to match your design.
  */
-
 ::-moz-selection {
   background: #b3d4fc;
   text-shadow: none;
@@ -40,7 +36,6 @@ html {
 /*
  * A better looking default horizontal rule
  */
-
 hr {
   display: block;
   height: 1px;
@@ -55,7 +50,6 @@ hr {
  * images, videos and the bottom of their containers:
  * https://github.com/h5bp/html5-boilerplate/issues/440
  */
-
 audio,
 canvas,
 iframe,
@@ -68,7 +62,6 @@ video {
 /*
  * Remove default fieldset styles.
  */
-
 fieldset {
   border: 0;
   margin: 0;
@@ -78,7 +71,6 @@ fieldset {
 /*
  * Allow only vertical resizing of textareas.
  */
-
 textarea {
   resize: vertical;
 }
@@ -86,38 +78,63 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+   /* font-family: 'Open Sans', sans-serif;
+   font-family: 'Poppins', sans-serif; */
 
 /* Base styles */
 ::before, ::after {
   box-sizing: border-box;
 }
 
+html {
+  font-size: 16px;
+}
+
 body {
+  color: #e2e3ed;
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+  font-size: .875rem;
+}
+
+h1, h2, h3 {
+  font-family: 'Poppins', sans-serif;
   margin: 0;
 }
 
+h2 {
+  font-size: 1.875rem;
+  font-weight: normal;
+}
+
+h3 {
+  font-size: 1.125rem;
+  font-weight: normal;
+}
+
 .content-wrapper {
-  width: 85%;
+  width: 90%;
   max-width: 1100px;
   margin: 0 auto;
 }
 
 /************************** Base Header - Footer styles ******************/
-
 header,
 footer {
-display: flex;
-justify-content: center;
-align-items: center;
-flex-flow: row wrap;
+  background-color: #202322;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
 }
 
 /* Header styles */
-
 header {
+  padding-top: 15px;
 }
 
 header .content-wrapper {
+  width: 60%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -138,6 +155,7 @@ header nav {
 }
 
 .nav-list {
+  width: 45%;
   display: flex;
   justify-content: space-around;
   list-style-type: none;
@@ -145,31 +163,50 @@ header nav {
 }
 
 .nav-item {
-text-decoration: none;
-margin: 0 2em;
-text-transform: uppercase;
+  color: #e2e3ed;
+  font-size: 1.125rem;
+  font-weight: bold;
+  text-decoration: none;
+  margin: 0 1.5em;
+  text-transform: uppercase;
 }
 
 /* Footer styles */
+footer {
+  color: #ffffff;
+}
 
 footer .content-wrapper {
-
+  width: 55%;
+  margin: 50px 0;
 }
 
-.footer-content {
-
-}
+.footer-content {}
 
 .contact,
 .social {
-text-align: center;
+  text-align: center;
+}
+
+.contact {
+  padding-bottom: 40px;
+}
+
+.contact-info {
+  font-style: normal;
+  padding: 15px 0;
+}
+
+.contact-info p {
+  margin: 0;
 }
 
 .social-icons {
-    display: flex;
-    justify-content: center; /*space-around=soluton*/
-    align-items: center;
-  }
+  display: flex;
+  justify-content: center;
+  /*space-around used in soluton*/
+  align-items: center;
+}
 
 .social p {
   display: flex;
@@ -183,75 +220,155 @@ text-align: center;
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
+  background-image: url("../img/jake-melara-30679-unsplash.jpg");
+  /* background-color: ; */
+  height: 500px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.hero-headline {
+  font-size: 2.25rem;
+  font-weight: normal;
+  line-height: 1.25;
+  padding: 50px 20px 0 0;
 }
 
 /* Aside section */
 aside {
+  background-color: #527158;
+  padding-bottom: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
 }
 
-.form-description {}
+input {
+  margin-top: 15px;
+}
 
-.form {}
+.form-description-headline {
+  padding-top: 25px;
+}
+
+.form-headline {
+  margin-top: 25px;
+}
+
+.form-btn-text {
+  padding: 15px;
+  width: 90%;
+}
+
+.form-btn-download {
+  background-color: #2a423a;
+  color: #e2e3ed;
+  padding: 15px;
+  width: 100%;
+  text-transform: uppercase;
+}
 
 /* Features section */
 .features {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   /* includes flex-flow: row wrap in solution */
+color: #000000;
+  /* background-image: url("../img/rawpixel-800820-unsplash1.jpg");
+  background-color: ;
+  height: 1450px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative; */
+  padding: 50px 0 50px 0;
+}
+
+.features-headline {
+  padding-bottom: 50px;
 }
 
 .features-items {
+  width: 62%;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
   text-align: center;
+  margin-right: 0;
+  padding: 0 60px;
 }
 
 .fontawesome-icon {}
 
-.features-items-description {}
+.features-items-description {
+  padding-top: 30px;
+  margin: 0;
+}
 
 /* Reviews section */
 .reviews {
+  background-color: #2a423a;
+  padding: 45px 0;
   display: flex;
   justify-content: center;
-  align-items: center; /*missing in solution*/
+  align-items: center;
+  /*missing in solution*/
   flex-flow: row wrap;
 }
 
-.company-review {}
+.company-img {
+  padding-top: 30px;
+  padding-bottom: 20px;
+}
 
-.company-content {}
+.company-content h3 {
+  width: 55%;
+}
 
 /*************************** Mobile styles - About page *********************/
-
 .mission {
+  background: #527158;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  padding: 45px 0;
+}
+
+.mission-headline {
+  line-height: 1.25;
+}
+
+.mission-content p {
+  margin-bottom: 0;
 }
 
 .contact-section {
+  background-color: #2a423a;
+  padding: 45px 0;
   display: flex;
   justify-content: center;
   align-items: center;
   /* includes flex-flow: row wrap in solution */
 }
 
-/*************************** Mobile styles - FAQ page *********************/
+.contact-content {
+  margin-top: 10px;
+}
 
+/*************************** Mobile styles - FAQ page *********************/
 .faq {
+  background-color: #527158;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  padding: 50px 0 35px;
 }
 
 .faq .content-wrapper {
@@ -261,15 +378,16 @@ aside {
   flex-flow: row wrap;
 }
 
+.faq-content {
+  margin-top: 40px;
+}
 
 /* ==========================================================================
    Helper classes
    ========================================================================== */
-
 /*
  * Hide visually and from screen readers
  */
-
 .hidden,
 [hidden] {
   display: none !important;
@@ -283,7 +401,6 @@ aside {
  *    causes content to wrap 1 word per line:
  *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
  */
-
 .sr-only {
   border: 0;
   clip: rect(0, 0, 0, 0);
@@ -302,7 +419,6 @@ aside {
  * to be focusable when navigated to via the keyboard:
  * https://www.drupal.org/node/897638
  */
-
 .sr-only.focusable:active,
 .sr-only.focusable:focus {
   clip: auto;
@@ -317,7 +433,6 @@ aside {
 /*
  * Hide visually and from screen readers, but maintain layout
  */
-
 .invisible {
   visibility: hidden;
 }
@@ -333,7 +448,6 @@ aside {
  * 2. The use of `table` rather than `block` is only necessary if using
  *    `:before` to contain the top-margins of child elements.
  */
-
 .clearfix::before,
 .clearfix::after {
   content: " ";
@@ -349,15 +463,14 @@ aside {
    These examples override the primary ('mobile first') styles.
    Modify as content requires.
    ========================================================================== */
-
 @media only screen and (min-width: 35em) {
   /* Style adjustments for viewports that meet the condition */
 }
 
 @media print,
-  (-webkit-min-device-pixel-ratio: 1.25),
-  (min-resolution: 1.25dppx),
-  (min-resolution: 120dpi) {
+(-webkit-min-device-pixel-ratio: 1.25),
+(min-resolution: 1.25dppx),
+(min-resolution: 120dpi) {
   /* Style adjustments for high resolution devices */
 }
 
@@ -366,8 +479,8 @@ aside {
    Inlined to avoid the additional HTTP request:
    https://www.phpied.com/delay-loading-your-print-css/
    ========================================================================== */
-
 @media print {
+
   *,
   *::before,
   *::after {

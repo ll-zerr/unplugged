@@ -16,7 +16,9 @@
   <link rel="manifest" href="site.webmanifest">
   <link rel="apple-touch-icon" href="icon.png">
   <!-- Place favicon.ico in the root directory -->
-
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Poppins:wght@500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
 
@@ -44,7 +46,7 @@
   <main>
     <section class="hero-area">
       <div class="content-wrapper">
-        <h1>Retreat from the desk, return refreshed.</h1>
+        <h1 class="hero-headline">Retreat from the desk, return refreshed.</h1>
       </div>
     </section>
 
@@ -52,14 +54,14 @@
       <div class="content-wrapper">
 
         <div class="form-description">
-          <h3>Want to join the next retreat?</h3>
+          <h3 class="form-description-headline">Want to join the next retreat?</h3>
           <p>Find out when we are holding our next retreat and how your company or team can sign up!</p>
         </div>
 
         <div class="form">
-          <h3>Find out more</h3>
-          <input type="text" name="name" value="name@email.com">
-          <input type="button" value="Download Itinerary">
+          <h3 class="form-headline">Find out more</h3>
+          <input class="form-btn-text" type="text" name="name" value="name@email.com">
+          <input class="form-btn-download" type="button" value="Download Itinerary">
         </div>
       </div>
       <!--aside content wrapper ends -->
@@ -68,7 +70,7 @@
     <section class="features">
       <div class="content-wrapper">
         <!-- add your features content here -->
-        <h2>Have the work week you always dreamed of - without the bad wifi.</h2>
+        <h2 class="features-headline">Have the work week you always dreamed of - without the bad wifi.</h2>
         <div class="features-items">
           <article>
             <p class="fontawesome-icon"></p>
@@ -106,9 +108,12 @@
     <section class="reviews">
       <div class="content-wrapper">
         <!-- add your reviews content here -->
-        <h2>Be a better team in 5 days, like these.</h2>
+        <h2 class="review-heading">Be a better team in 5 days, like these.</h2>
         <article class="company-review">
           <!-- image here -->
+          <div class="company-img">
+            <img src="img/omar-lopez-296944-unsplash.jpg" alt="company image">
+          </div>
           <div class="company-content">
             <h3>LaCrue Bottling Co. <br /> October 2017</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
@@ -127,12 +132,13 @@
 
       <div class="footer-content">
         <div class="contact">
-          <h3>Contact</h3>
-          <address class="">
+          <h3 class="contact-heading">Contact</h3>
+          <address class="contact-info">
             <p>555-555-5555</p>
             <p>hello@unplugged.com</p>
           </address>
         </div>
+
         <div class="social">
           <h3>Social</h3>
           <div class="social-icons">

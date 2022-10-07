@@ -469,7 +469,7 @@ color: #000000;
 
 /*** Tablet styles - Homepage ***/
 .content-wrapper {
-  width: 85%;
+  max-width: 85%;
   /* max-width: 640px; */
 }
 
@@ -478,6 +478,7 @@ color: #000000;
 header {
   padding: 25px 0;
 }
+
 header .content-wrapper {
   flex-flow: row nowrap;
   justify-content: space-between;
@@ -585,6 +586,7 @@ footer .content-wrapper {
   justify-content: space-between;
   align-items: center;
 }
+
 .mission-headline {
   margin-bottom: 30px;
 }
@@ -635,8 +637,73 @@ footer .content-wrapper {
 }
 
 @media only screen and (min-width:1200px) {
-/*** Desktop styles   ***/
+/*** Desktop styles - Homepage   ***/
 
+/* Header */
+header nav {
+  width: 20%;
+}
+
+/* Hero */
+.hero-headline {
+  margin-top: 0;
+}
+
+/* Aside */
+
+aside .content-wrapper {
+  justify-content: space-around;
+}
+
+.form-description,
+.form {
+  padding: 0 70px;
+}
+
+/* Features */
+.features article {
+  flex-basis: 30%;
+}
+
+.features-items p {
+  padding: 30px 25px 0 25px;
+}
+
+/* Reviews */
+.company-review {
+  padding-top: 90px;
+}
+
+.company-content {
+  padding-left: 30px;
+}
+
+footer .content-wrapper {
+  width: 75%;
+}
+
+/*** Desktop styles - About page   ***/
+.mission-headline {
+  width: 90%;
+}
+
+.contact-content {
+  margin-top: 30px;
+}
+
+.contact-info {
+  padding-top: 30px;
+}
+
+.facilitator-info {
+  margin-right: 180px;
+}
+
+/*** Desktop styles - FAQ page   ***/
+.faq-content {
+  flex-basis: 45%;
+  padding-right: 20px;
+}
 }
 
 /* ==========================================================================

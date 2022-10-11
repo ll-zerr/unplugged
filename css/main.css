@@ -149,7 +149,12 @@ img {
   max-width: 100%;
 }
 
-.header-divider {}
+.header-divider {
+  background: #3a3a3a;
+  height: 1px;
+  width: 100%;
+  margin-top: 10px;
+}
 
 header nav {
   width: 60%;
@@ -205,6 +210,10 @@ footer .content-wrapper {
 
 .contact-info p {
   margin: 0;
+}
+
+.footer-contact p {
+  line-height: 1;
 }
 
 .social-icons {
@@ -268,18 +277,21 @@ input {
   font-family: 'Open Sans', sans-serif;
   font-size: .875em;
   font-style: italic;
-  padding: 15px;
+  padding: 1em;
   width: 90%;
 }
 
 .form-btn-download {
   background-color: #2a423a;
   color: #e2e3ed;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Poppins', Helvetica, Arial, sans-serif;
   font-size: 1.125em;
   padding: 15px;
   width: 100%;
   text-transform: uppercase;
+  font-weight: 500;
+  border: none;
+  text-align: center;
 }
 
 /* Features section */
@@ -392,6 +404,7 @@ color: #000000;
 .faq-content {
   margin-top: 40px;
 }
+
 
 /* ==========================================================================
    Helper classes
@@ -535,11 +548,16 @@ footer .content-wrapper {
   width: 85%;
 }
 
+.footer-contact p {
+  line-height: 1.4;
+}
+
 /*** Tablet styles - Homepage ***/
 
 /* Hero area */
 .hero-headline {
   font-size: 3em;
+  line-height: 1;
   margin-top: 40px;
 }
 
@@ -678,10 +696,20 @@ header nav {
   width: 20%;
 }
 
+/* Footer */
+footer .content-wrapper {
+  width: 75%;
+}
+
+.footer-contact p {
+  line-height: 1;
+}
+
 /*** Desktop styles - Homepage   ***/
 /* Hero */
 .hero-headline {
   font-size: 3.75em;
+  line-height: 1.2;
   margin-top: 0;
 }
 
@@ -722,10 +750,6 @@ aside .content-wrapper {
   padding-left: 30px;
 }
 
-footer .content-wrapper {
-  width: 75%;
-}
-
 /*** Desktop styles - About page   ***/
 .mission-headline {
   width: 90%;
@@ -759,6 +783,10 @@ footer .content-wrapper {
 .faq-content {
   flex-basis: 45%;
   padding-right: 20px;
+}
+
+.faq-content p {
+  line-height: 1;
 }
 }
 

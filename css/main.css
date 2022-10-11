@@ -116,6 +116,10 @@ p {
   font-size: .875em;
 }
 
+img {
+  max-width: 100%;
+}
+
 .content-wrapper {
   width: 90%;
   max-width: 1100px;
@@ -143,10 +147,6 @@ header .content-wrapper {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
-}
-
-img {
-  max-width: 100%;
 }
 
 .header-divider {
@@ -236,7 +236,7 @@ footer .content-wrapper {
   justify-content: center;
   flex-flow: row wrap;
   background-image: url("../img/jake-melara-30679-unsplash.jpg");
-  /* background-color: ; */
+  background-color: #333;
   height: 500px;
   background-position: center;
   background-repeat: no-repeat;

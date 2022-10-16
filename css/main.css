@@ -679,6 +679,10 @@ aside .content-wrapper {
   margin-left: 45px;
 }
 
+.map figure {
+  padding-bottom: 45%;
+}
+
 .contact-section {
   padding: 90px 0;
 }
@@ -793,6 +797,10 @@ aside .content-wrapper {
 .mission-headline,
 .contact-section-headline {
   font-size: 3em;
+}
+
+.map figure {
+  padding-bottom: 37%;
 }
 
 .contact-section-headline {

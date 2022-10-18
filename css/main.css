@@ -330,7 +330,7 @@ input {
 }
 
 .features-headline {
-  padding-bottom: 50px;
+  padding-bottom: 10px;
 }
 
 .features-items {
@@ -344,11 +344,17 @@ input {
   padding: 0 60px;
 }
 
-.fontawesome-icon {}
+/* .fontawesome-icon {
+} */
 
 .features-items p {
-  padding-top: 30px;
   margin: 0;
+}
+
+.features i {
+  font-size: 3.75em;
+  margin-bottom: 40px;
+  padding-top: 50px;
 }
 
 /* Reviews section */
@@ -614,13 +620,22 @@ aside .content-wrapper {
 }
 
 .features-items {
-  width: 85%;
+  width: 80%;
   justify-content: space-between;
   align-items: flex-start;
 }
 
+.features-headline {
+  padding-bottom: 0;
+}
+
 .features article {
   flex-basis: 40%;
+}
+
+.features i {
+  margin-bottom: 20px;
+  padding-top: 40px;
 }
 
 /* Reviews */
@@ -772,12 +787,17 @@ aside .content-wrapper {
 }
 
 /* Features */
+.features-items {
+  width: 100%;
+  padding: 0;
+}
+
 .features article {
   flex-basis: 30%;
 }
 
 .features-items p {
-  padding: 30px 25px 0 25px;
+  padding: 30px 50px 0 50px;
 }
 
 /* Reviews */

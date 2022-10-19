@@ -235,15 +235,33 @@ footer .content-wrapper {
 
 .social-icons {
   display: flex;
-  justify-content: center;
-  /*space-around used in soluton*/
+  justify-content: space-between;
   align-items: center;
+}
+
+.button {
+  background-color: #527158;
+  border: none;
+  border-radius: 50%;
+  padding: 10px;
+  text-align: center;
+  width: 40px;
+  height: 40px;
+}
+
+.social a {
+  color: #e2e3ed;
+  font-size: 1.125em;
 }
 
 .social p {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.copyright p {
+  margin-top: 0;
 }
 
 /*************************** Mobile styles - Homepage *********************/
@@ -265,7 +283,7 @@ footer .content-wrapper {
   font-size: 2.25em;
   font-weight: normal;
   line-height: 1.25;
-  padding: 50px 20px 0 0;
+  padding: 50px 0;
 }
 
 /* Aside section */
@@ -580,17 +598,30 @@ header nav {
 
 /* Footer */
 footer .content-wrapper {
+  width: 65%;
   margin: 90px 0;
 }
 
 .footer-content {
   display: flex;
   justify-content: space-between;
-  width: 85%;
+  width: 100%;
 }
 
 .footer-contact p {
   line-height: 1.4;
+}
+
+.contact {
+  padding-bottom: 0;
+}
+
+.social {
+  width: 45%;
+}
+
+.social-icons {
+  justify-content: space-around;
 }
 
 /*** Tablet styles - Homepage ***/
@@ -759,12 +790,21 @@ footer .content-wrapper {
   line-height: 1;
 }
 
+.contact, .social {
+  width: 30%;
+}
+
+.social-headline {
+  margin-bottom: 10px;
+}
+
 /*** Desktop styles - Homepage   ***/
 /* Hero */
 .hero-headline {
   font-size: 3.75em;
   line-height: 1.2;
   margin-top: 0;
+  width: 70%;
 }
 
 /* Aside */

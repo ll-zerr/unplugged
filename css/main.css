@@ -349,6 +349,7 @@ input {
 
 .features-headline {
   padding-bottom: 10px;
+  padding-right: 10px;
 }
 
 .features-items {
@@ -361,9 +362,6 @@ input {
   margin: 0;
   padding: 0 60px;
 }
-
-/* .fontawesome-icon {
-} */
 
 .features-items p {
   margin: 0;
@@ -384,6 +382,10 @@ input {
   align-items: center;
   /*missing in solution*/
   flex-flow: row wrap;
+}
+
+.review-heading {
+  padding-right: 10px;
 }
 
 .company-img {
@@ -589,11 +591,12 @@ header nav {
 }
 
 .nav-list {
-  justify-content: space-between;
+  justify-content: flex-end;
 }
 
 .nav-item {
   margin-right: 0;
+  margin-left: 3em;
 }
 
 /* Footer */
@@ -618,6 +621,11 @@ footer .content-wrapper {
 
 .social {
   width: 45%;
+}
+
+.contact-heading,
+.social-headline {
+  padding-bottom: 15px;
 }
 
 .social-icons {
@@ -714,7 +722,8 @@ aside .content-wrapper {
 }
 
 .mission-headline {
-  margin-bottom: 30px;
+  margin-bottom: 15px;
+  padding-right: 40px;
 }
 
 .col {
@@ -792,6 +801,11 @@ footer .content-wrapper {
 
 .contact, .social {
   width: 30%;
+}
+
+.contact-heading,
+.social-headline {
+  padding-bottom: 0;
 }
 
 .social-headline {

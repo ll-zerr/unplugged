@@ -465,6 +465,10 @@ input {
   margin-top: 40px;
 }
 
+.faq-headline {
+  line-height: 1;
+}
+
 
 /* ==========================================================================
    Helper classes
@@ -650,7 +654,7 @@ aside .content-wrapper {
 
 .form-description,
 .form {
-  width: 45%;
+  width: 43%;
 }
 
 /* Features */

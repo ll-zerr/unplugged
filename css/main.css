@@ -553,6 +553,29 @@ input {
    These examples override the primary ('mobile first') styles.
    Modify as content requires.
    ========================================================================== */
+@media (max-width:319px) {
+  header figure {
+    width: 90%;
+  }
+
+  .form-btn-text {
+    width: 85%;
+  }
+
+  .form-btn-download {
+    max-width: 275px;
+    padding: 10px;
+  }
+
+  .features-items {
+    padding: 0;
+  }
+
+  footer .content-wrapper {
+    width: 65%;
+  }
+}
+
 @media (min-width:460px) and (max-width:767px) {
   .social {
     max-width: 200px;

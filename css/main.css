@@ -78,8 +78,6 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-   /* font-family: 'Open Sans', sans-serif;
-   font-family: 'Poppins', sans-serif; */
 
 /* General styles */
 ::before, ::after {
@@ -154,7 +152,6 @@ header figure {
 }
 
 header .content-wrapper {
-  /* width: 60%; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -337,15 +334,11 @@ input {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  /* includes flex-flow: row wrap in solution */
-/* color: #000000; */
   background-image: url("../img/rawpixel-800820-unsplash1.jpg");
   background-color: #333;
-  /* height: 1450px; */
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  /* position: relative; */
   padding: 50px 0;
 }
 
@@ -382,7 +375,6 @@ input {
   display: flex;
   justify-content: center;
   align-items: center;
-  /*missing in solution*/
   flex-flow: row wrap;
 }
 
@@ -439,7 +431,6 @@ input {
   display: flex;
   justify-content: center;
   align-items: center;
-  /* includes flex-flow: row wrap in solution */
 }
 
 .contact-content {
@@ -604,7 +595,6 @@ h4 {
 
 .content-wrapper {
   max-width: 85%;
-  /* max-width: 640px; */
 }
 
 /* Header */

@@ -594,7 +594,7 @@ h4 {
 }
 
 .content-wrapper {
-  max-width: 85%;
+  max-width: 640px;
 }
 
 /* Header */
@@ -713,7 +713,7 @@ aside .content-wrapper {
 }
 
 .review-heading {
-  width: 75%;
+  width: 80%;
 }
 
 .company-review {
@@ -753,7 +753,7 @@ aside .content-wrapper {
 
 .mission-headline {
   margin-bottom: 15px;
-  padding-right: 40px;
+  padding-right: 30px;
 }
 
 .col {
@@ -815,6 +815,10 @@ p, h4 {
   font-size: 1.125em;
 }
 
+.content-wrapper {
+  max-width: 960px;
+}
+
 /* Header */
 header nav {
   width: 20%;
@@ -826,7 +830,7 @@ footer .content-wrapper {
 }
 
 .footer-contact p {
-  line-height: 1;
+  line-height: 1.25;
 }
 
 .contact, .social {
@@ -919,7 +923,7 @@ aside .content-wrapper {
 }
 
 .facilitator-info {
-  margin-right: 180px;
+  margin-right: 120px;
 }
 
 /*** Desktop styles - FAQ page   ***/
